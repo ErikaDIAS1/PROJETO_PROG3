@@ -9,9 +9,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>348</width>
-    <height>585</height>
+    <width>310</width>
+    <height>579</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="font">
    <font>
@@ -28,10 +34,13 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">widget{background-color: rgb(227, 227, 227);}</string>
+      </property>
       <widget class="QLabel" name="label_bemvindo">
        <property name="geometry">
         <rect>
-         <x>30</x>
+         <x>0</x>
          <y>10</y>
          <width>280</width>
          <height>71</height>
@@ -63,8 +72,8 @@ border radius: 10px;</string>
        </property>
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>90</y>
+         <x>20</x>
+         <y>100</y>
          <width>261</width>
          <height>195</height>
         </rect>
@@ -82,34 +91,37 @@ border radius: 10px;</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>9</x>
-         <y>325</y>
-         <width>311</width>
-         <height>211</height>
+         <x>20</x>
+         <y>320</y>
+         <width>261</width>
+         <height>191</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
          <widget class="QPushButton" name="pushButton_login">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="font">
            <font>
             <family>Segoe UI</family>
-            <pointsize>14</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+            <stylestrategy>PreferAntialias</stylestrategy>
            </font>
           </property>
           <property name="contextMenuPolicy">
            <enum>Qt::CustomContextMenu</enum>
           </property>
           <property name="styleSheet">
-           <string notr="true">pushButton_login{
-background-color:rgb(255, 255, 255);
-color:  rgb(87, 87, 94);}
-</string>
+           <string notr="true">background-color: rgb(87, 87, 94);
+border-radius: 10px;
+color: rgb(255, 255, 255)</string>
           </property>
           <property name="text">
            <string>LOGIN</string>
@@ -121,19 +133,19 @@ color:  rgb(87, 87, 94);}
           <property name="font">
            <font>
             <family>Segoe UI</family>
-            <pointsize>14</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
+            <pointsize>16</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
            </font>
           </property>
           <property name="contextMenuPolicy">
            <enum>Qt::CustomContextMenu</enum>
           </property>
           <property name="styleSheet">
-           <string notr="true">pushButton_login{
-background-color:rgb(255, 255, 255);
-color:  rgb(87, 87, 94);}
-</string>
+           <string notr="true">background-color: rgb(156, 156, 163);
+color:  rgb(87, 87, 94);
+border-radius:10px;
+color: rgb(87, 87, 94)</string>
           </property>
           <property name="text">
            <string>CADASTRO</string>
